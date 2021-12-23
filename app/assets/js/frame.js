@@ -1,0 +1,1 @@
+document.getElementById("title-frame").innerHTML = ('<strong>Rift Installeur - Beta</strong> - <span id="version">(' + VersionLauncher + ')</span>');

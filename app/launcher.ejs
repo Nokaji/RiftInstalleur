@@ -1,0 +1,64 @@
+<div id="launcher-view" style="display: none;">
+    <div class="header">
+        <div class="container">
+            <div class="sidebar">
+                <div class="logo-details">
+                  <img class="c-plus-plus icon" src="./assets/images/icons/icon.png" width="15px" height="15px" style="margin-right: 10%;">
+                    <div class="logo_name">Nexus</div>
+                </div>
+                <ul class="nav-list">
+                  <li>
+                    <a id="launcher-nav-home-button" class="active">
+                      <i class='bx bx-home'></i>
+                      <span class="links_name">Accueil</span>
+                    </a>
+                     <span class="tooltip">Accueil</span>
+                  </li>
+                  <li>
+                    <a id="launcher-nav-beta-button">
+                      <i class='bx bx-code-alt'></i>
+                      <span class="links_name">Beta</span>
+                    </a>
+                     <span class="tooltip">Beta</span>
+                  </li>
+                  <li>
+                   <a href="#">
+                     <i class='bx bx-user' ></i>
+                     <span class="links_name">Comptes</span>
+                   </a>
+                   <span class="tooltip">Comptes</span>
+                 </li>
+                 <li>
+                    <a id="launcher-nav-settings-button">
+                     <i class='bx bx-cog' ></i>
+                     <span class="links_name">Paramètres</span>
+                    </a>
+                    <span class="tooltip">Paramètres</span>
+                 </li>
+                 <li>
+                  <a id="launcher-nav-login-button">
+                   <i class='bx bx-log-in' ></i>
+                   <span class="links_name">Connexion</span>
+                  </a>
+                  <span class="tooltip">Connexion</span>
+               </li>
+                </ul>
+              </div>
+              <center>
+                <img src="assets/images/logo.png" class="logo">
+              </center>
+        </div>
+    </div>
+</div>
+    
+    <!-- Home Panel -->
+    <% include launcher/home.ejs %>
+    <!-- Beta Panel -->
+    <% include launcher/beta.ejs %>
+    <!-- Login Panel -->
+    <% include login.ejs %>
+    <!-- Settings Panel -->
+    <% include settings.ejs %>
+    <script src="./assets/js/scripts/launcher.js"></script>
+    <script src="./assets/js/iziToast.js"></script>
+</div>

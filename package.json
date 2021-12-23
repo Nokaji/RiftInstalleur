@@ -1,0 +1,62 @@
+{
+  "name": "riftlauncher",
+  "version": "0.0.1",
+  "productName": "Rift Launcher",
+  "description": "Rift Launcher",
+  "author": "Nokaji",
+  "license": "AGPL-3.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "cilinux": "node build.js WINDOWS && node build.js LINUX",
+    "cidarwin": "node build.js MAC",
+    "dist": "cross-env ELECTRON_BUILDER_ALLOW_UNRESOLVED_DEPENDENCIES=true node build.js",
+    "dist:win": "npm run dist -- WINDOWS",
+    "dist:mac": "npm run dist -- MAC",
+    "dist:linux": "npm run dist -- LINUX",
+    "lint": "eslint --config .eslintrc.json .",
+    "build-electronforge": "rimraf ./dist && electron-forge start --"
+  },
+  "engines": {
+    "node": "16.x.x"
+  },
+  "dependencies": {
+    "adm-zip": "^0.4.13",
+    "async": "^3.0.1-0",
+    "audic": "^2.0.0",
+    "axios": "^0.21.1",
+    "azuriom-auth": "^0.1.2",
+    "discord-rich-presence": "0.0.8",
+    "discord-rpc": "^3.2.0",
+    "ejs": "^2.7.1",
+    "ejs-electron": "^2.0.3",
+    "electron-dl": "^3.2.1",
+    "electron-forge": "^5.2.4",
+    "electron-online": "^1.0.0",
+    "electron-updater": "^4.3.8",
+    "fs": "0.0.1-security",
+    "fs-extra": "^7.0.1",
+    "github-syntax-dark": "^0.5.0",
+    "izitoast": "^1.4.0",
+    "jquery": "^3.4.1",
+    "node-fetch": "^2.6.1",
+    "request": "^2.88.0",
+    "semver": "^6.0.0",
+    "sound-play": "^1.1.0",
+    "tar-fs": "^2.0.0",
+    "update-electron-app": "^2.0.1",
+    "winreg": "^1.2.4"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.1",
+    "electron": "^7.3.3",
+    "electron-builder": "^21.2.0",
+    "electron-packager": "^8.1.0",
+    "eslint": "^5.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nokaji/RiftInstalleur.git"
+  }
+}
